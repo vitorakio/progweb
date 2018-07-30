@@ -1,0 +1,25 @@
+apache, xampp, easyphp, mamp
+
+alan.rodrigues@grupointegrado.br
+
+
+FRONT-END
+HTML	   = conteúdo
+CSS		   = apresentação
+JavaScript = comportamento
+
+BACK-END
+Java
+PHP
+APACHE
+MYSQL
+...
+
+CONSTRUÇÃO LINGUAGEM HTML
+
+<!doctype html> -Informa ao navegador que é um documento HTML
+<html> </html>  -Esta é a tag de abertura de qualquer página em html
+<title> </tite> -Título do documento
+<body> </body>  -Corpo do documento html
+
+

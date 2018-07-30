@@ -1,0 +1,27 @@
+Formatação HTML
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Olá todo mundo!!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Texto em destaque</h1>
+        
+        <p>Começando um <b>parágrafo</b>. </p><p>Perceba que os parágrafos sempre<strong> começam em nova linha.</strong></p>
+        
+        <p><big>Texto-big</big></p>
+<p><i>Texto-italico</i></p>
+<p><em>Texto-emphasized</em></p>
+<p><code>Texto-code</code></p>
+<p>Texto<sub>subscrito</sub>e texto<sup>sobrescrito</sup></p>
+<p><s>Texto tracejado</s> e <u>texto sublinhado</u></p>
+    </body>
+</html>
