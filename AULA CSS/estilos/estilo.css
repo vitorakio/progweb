@@ -1,7 +1,12 @@
 body{
-    background-color: darkcyan;
+    background: darkcyan
+    url("../imagens/gif.gif")
+    repeat
+    fixed
+    center
 }
 
 h1{
-    color: darkorchid;
+    color: rgb(0, 68, 255);
+    font-family: Arial, Helvetica, sans-serif
 }
