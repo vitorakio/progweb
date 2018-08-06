@@ -1,0 +1,8 @@
+a { color: blue; } 
+a.tabuleiro { color: #FFBB00; }
+.tabuleiro { color: red } 
+a.cartas { color: #800000; }
+
+#cabecalho1{
+    color: #FFBB00
+}
