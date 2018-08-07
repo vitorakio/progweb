@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Meu programa Java Script</h1>
+    <script>
+        preco = 128
+        unidades = 10
+        fatura = preco * unidades
+        resto = fatura % 3
+        preco++
+        console.log({
+            preco, unidades, fatura, resto
+        })
+    </script>
+
+    <script type="text/javascript"> 
+    var boleano = true;
+    var numerico = 22;
+    var numerico_flutuante = 13.56;
+    var texto = "meu texto";
+    var data = new Date();
+    document.write("<br>O tipo de boleano é: " + typeof boleano);
+    document.write("<br>O tipo de numerico é: " + typeof numerico);
+    document.write("<br>O tipo de numerico_flutuante é: " + typeof numerico_flutuante);
+    document.write("<br>O tipo de texto é: " + typeof texto);
+    document.write("<br>O tipo de data é: " + typeof data);
+    document.write("<br>Isso é uma data?: " + data instanceof Date);
+
+    var pessoa = {
+        nome: 'Vitor'
+        telefone: 123123
+    }
+
+    console.log(pessoa)
+    pessoa.endereço = 'Rua da casa'
+    console.log(pessoa)
+    </script>
+</body>
+
+</html>
