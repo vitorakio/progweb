@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Estilos de DIVs</title>
+    
     <style>
             html, body, #corpo{
                 padding: 0;
@@ -14,30 +14,54 @@
         #menu{
             background-color:cornflowerblue;
             color:aqua;
-            padding: 118px;
+            padding: 11px;
         }
         #menu a{
             text-decoration: antiquewhite;
             color: white;
             margin-right: 16px;
         }
+        .textovermelho{
+            color:red;
+        }
+        #logo{
+            width: 80px;
+            height: 30px;
+            margin-right: 16px;
+            object-fit: cover;
+        }
+        body {
+            margin-top: 100px;
+            margin-right: 40px;
+            margin-bottom: 10px;
+            margin-left: 70px; 
+        }
 
-        
+        body{
+            padding-left: 20px
+        }
+        .paragrafo{
+            border-style: dashed;
+            border-radius: 15px;
+            padding: 18px
+        }
+
     </style>
-    
+    <title>Estilos de <span class="textovermelho">DIVs</span></title>
 </head>
 
 <body>
-    <h1>Nova página</h1>
     <div id="corpo">
         <div id="menu">
+            <span><img id=logo src="C:\Users\VITOR\Desktop\TOP SECRET\ryH4fyu.gif" alt="logo"></span>
             <a href="#">Home</a>
             <a href="#">Artigos</a>
             <a href="#">Ajuda</a>
             <a href="#">Contato</a>
         </div>
         <div id="conteudo">
-            <p>Counter-Strike: Global Offensive é um simulador de russos feito pela Válvula e uma tal de Hidden Path Entertainment.
+            <h1>Estilos de <span class="textovermelho">DIVs</span></h1>
+            <p class="paragrafo">Counter-Strike: Global Offensive é um simulador de russos feito pela Válvula e uma tal de Hidden Path Entertainment.
                 Lançado em 2012 em comemoração ao fim do mundo, e é uma sequência de Counter-Strike: Source, mas que só mudou
                 foram os gráficos e novas formas de ser caça-níquel de otários arrecadar dinheiro, com as skins, que ainda
                 são uma das piores merdas inventadas pela Válvula. O jogo possui uma comunidade cancerígena a nível pior
