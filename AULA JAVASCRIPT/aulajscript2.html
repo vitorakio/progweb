@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula JScript 2</title>
+</head>
+<body>
+    <script>
+        window.open('http://google.com.br', '', 'width=1280, height=720, menubar=no');
+    </script>
+
+    <script>
+        window.alert('Bem-vindo ao meu site');
+        alert('Seja bem-vindo!');
+        document.write(new Date())
+    </script>
+
+    <script>
+            function voltar(){
+                history.go(-1)
+            }
+            function exibirMsg(){
+                alert('Clicou no botão')
+                history.go(-1)
+            }
+    </script>
+
+    <input type="button" value="Voltar" onclick="voltar()"/>
+    <input type="button" value="Clique aqui" onclick="exibirMsg()"/>
+</body>
+</html>

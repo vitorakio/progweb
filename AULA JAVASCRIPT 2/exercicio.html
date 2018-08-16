@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio</title>
+    <script>
+        function exibirMensagem(){
+            alert('Exercicio de Java Script')
+        }
+    </script>
+</head>
+<body>
+    <div id=conteudo>
+    </div>
+
+    <script>
+        var divConteudo = document.getElementById('conteudo')
+        var nome = prompt('Informe o seu nome', '<sem nome>') 
+        var nasc = prompt('Informe o seu ano de nascimento', '<data>')   
+            
+        if (nasc > 2000){
+        divConteudo.innerText = 'Visite www.disney.com'  
+        }
+        else{
+            divConteudo.innerText = 'Você pode ser preso'
+        }
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AULA JSCRIPT</title>
+    <script>
+        function exibirMensagem(){
+            alert('Bem vindo a aula de java script')
+
+        }
+    </script>
+</head>
+<body onload="exibirMensagem()">
+    <h1>Aula de Java Sript</h1>
+
+    <div id="conteudo">
+    </div>
+
+    <script>
+        var divConteudo = document.getElementById('conteudo');
+        divConteudo.innerText = "Hoje estamos aprendndo sobre posição do Script."
+    </script> 
+
+    <script>
+        var divConteudo = document.getElementById('conteudo');
+        var dataAtual = new Date();
+        var horaAtual = dataAtual.getHours();
+        if (horaAtual>= 18){
+            divConteudo.innerHTML = 'Boa noite.'
+        }
+        else if (horaAtual >= 12){
+            divConteudo.innerHTML = 'Boa tarde.'
+        }
+        else {
+            divConteudo.innerHTML = 'Bom dia'
+        }
+    </script>
+<script>
+    var divConteudo = document.getElementById('conteudo')
+    var resultado = confirm('Escolha uma opção')
+    if (resultado)
+        divConteudo.innerText = 'Voce clicou em OK'
+    else
+        divConteudo.innerText = 'Voce clicou em cancelar'
+</script>
+
+    <script>
+        var divConteudo = document.getElementById('conteudo')
+        var nome = prompt('Informe o seu nome', '<sem nome>')
+
+    //valores que são considerados falsos
+    null
+    undefined
+    0
+    ''
+
+
+    if (nome){
+        divConteudo.innerText = 'Ola ' + nome + ', seja bem vindo'
+    }
+    </script>
+</body>
+</html>

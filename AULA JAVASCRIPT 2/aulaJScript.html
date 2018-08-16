@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AULA FUNÇÃO</title>
+    <html>
+        <script type="text/javascript"> 
+            function minhaFuncao(txt) {
+                alert(txt);
+            }
+
+            function exibirTitulos(){
+                var divConteudo = document.getElementById('conteudo')
+                var html = ""
+                for (var i = 1; i <= 6; i++){
+                    if (i == 4) {
+                        continue;
+                    }
+                    document.write("<h" + i + ">Cabeçalho " + i);
+                    document.write("</h" + i + ">");
+                    divConteudo.innerHTML = html
+                }
+            }
+
+                var animais = ["Cachoro", "Gato", "Tartuga", "rato"];
+
+                function exibirAnimais(){
+                    var divConteudo = document.getElementById('conteudo')
+                    var html = "<ul>"
+                    for(var i in animais){
+                        var animal = animais[i]
+                        html += "<li>" + animal + "<li>"
+                    }
+                    html += "</ul>"
+                    divConteudo.innerHTML = html
+                }
+            
+        </script> 
+    </head>
+
+    <body>
+        <div id='conteudo'>
+        </div>
+        <form>
+            <input type="button" onclick="minhaFuncao('Hello')" value="Call function"> 
+        </form>
+            <input type="button" onclick="exibirTitulos()" value="Cabeçalho">
+            <input type="button" onclick="exibirAnimais()" value="Mostrar animais">
+
+    
+    </body>
+    </html>
