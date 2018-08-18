@@ -75,21 +75,33 @@ font-size: 18px;
     justify-content: flex-start;
 }
 
+.letraMusica{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
 .verso{
-    width: 925px;
+    padding: 10px;
+    margin-left: 100px;
     text-align: right;
     float: left;
     font-family: Arial;
     
 }
 .inverso{
-    width: 925px;
+    padding: 10px;
+    margin-right: 1px;
     text-align: left;
     float: right;
     font-family: Arial;
 }
 
 .video{
+    padding: 10px;
     display: flex;
     justify-content:  center
 }
