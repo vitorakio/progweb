@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio Java Script 2</title>
+
+    <script>
+ 
+            var r = ["00","33","66","99","CC","FF"];
+            var g = ["00","33","66","99","CC","FF"];
+            var b = ["00","33","66","99","CC","FF"]; 
+
+    </script>
+</head>
+
+<body>
+    <table border-style="dotted">
+        <script>
+            for(var iR in r){
+                for(var iG in g){
+                    document.write("<tr>");
+                    for(var iB in b){
+                        var novacor = "#" + r[iR] + g[iG] + b[iB];
+                        var bgopen = "<td style = 'background-color: " + novacor + "'>";
+                        var bgclose = "</td>";
+                        document.write(bgopen + novacor + bgclose)
+                       // document.write("<tr>");
+                        //document.write("<td>" + bgcolor + "</td>");
+                        //document.write("</tr>");
+                    }
+                    document.write("</tr>");
+                }
+            }
+        </script>
+    </table>
+    </body>
+</html>
+
+<style></style>
