@@ -9,15 +9,50 @@
 
 <script>
     function removerTitulo(){
-        document.getElementById('titulo').remove;
+        document.getElementById('titulo').style = "opacity: 0";
     }
+    function aparecerTitulo(){
+        document.getElementById('titulo').style = "opacity: 1px"
+    }
+
+    var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    function checarEmail(input, IdDivError){
+        var emailValido = regex.test(input.value);
+        var divEmailError = document.getElementById('IdDivError');
+        if (emailValido){
+            divEmailError.textContent =''
+        }
+        else{
+            divEmailError.textContent='Email Invalido'
+        }
+    }
+
+
+
 </script>
+
+<style>
+    .error{color: red}
+</style>
 
 </head>
 <body>
-    <h1>
-    <a href="http://google.com" onmouseover="removerTitulo()">GOOGLE</a>
-    </h1>
-</body>
+    <h1 id="titulo">
+    <a href="http://google.com" onmouseover="removerTitulo()" 
+                                onmouseout="aparecerTitulo()">GOOGLE
+    </a>
+    </h1><br>
 
+    <input type="text"
+     onchange="checarEmail(this, 'email-error')"
+     placeholder="Informe o e-mail"/>
+    <div id="email-error" class="error"></div>
+
+    <br>
+
+    <input type="text"
+    onchange="checarEmail(this, 'repetir-email-error')"
+    placeholder="Informe o e-mail novamente"/>
+    <div id="repetir-email-error" class="error"></div>
+</body>
 </html>
