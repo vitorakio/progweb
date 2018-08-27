@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio JScript</title>
+
+    <script>
+        function CalcularPesoIdeal(){
+            var sexoSelecionado = document.pesoIdeal.sexo.value;
+            var altm = parseFloat(document.pesoIdeal.altm.value);
+            var altf = parseFloat(document.pesoIdeal.altf.value);
+            var peso_ideal_homem = (72.7 * altm) - 58; 
+            var peso_ideal_homem_arredondado = parseFloat(peso_ideal_homem.toFixed(1));
+            var peso_ideal_mulher = (62.1 * altf) - 44.7;
+            var peso_ideal_mulher_arredondado = parseFloat(peso_ideal_mulher.toFixed(1));
+
+            if (sexoSelecionado === 'm'){
+                alert('Peso ideal: ' + peso_ideal_homem_arredondado);
+            }
+            else if (sexoSelecionado === 'f'){
+                alert('Peso ideal: ' + peso_ideal_mulher_arredondado);
+            }
+            else{
+                alert('Selecione uma opção');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="pesoIdeal">
+        <input type="radio" name="sexo" value="m">
+        <label>Masculino</label>
+        <input type="text" placeholder="Informe sua altura aqui" name="altm">
+        <br>
+        <br>
+        <input type="radio" name="sexo" value="f">
+        <label>Feminino</label>        
+        <input type="text" placeholder="Informe sua altura aqui" name="altf">
+        <br>
+        <button onclick="CalcularPesoIdeal()" type="button">Calcular</button>
+    </form>
+    <br>
+</body>
+</html>

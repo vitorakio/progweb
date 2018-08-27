@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Obtendo localização do usuário</title>
+    <script>
+    function obterlocalizacao(){
+        var divLocalizacao = document.getElementById('localizacao');
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(
+                function(posicao){
+                    console.log(posicao);
+                    var latitude = posicao.coords.latitude
+                    var longitude = posicao.coords.longitude
+                    var precisao = posicao.coords.accuracy
+                    divLocalizacao.innerHTML = 'Latitude: ' + latitude;
+                    divLocalizacao.innerHTML += '<br/>';
+                    divLocalizacao.innerHTML += 'Longitude: ' + longitude;
+                    divLocalizacao.innerHTML += '<br/>';
+                    divLocalizacao.innerHTML += 'Precisão: ' + precisao;
+                    divLocalizacao.innerHTML += '<br/>';
+
+                    var linkGoogleMaps = document.createElement('a');
+                    linkGoogleMaps.href = 'https://www.google.com.br/maps/?q='
+                        + latitude
+                        + ','
+                        + longitude
+                    linkGoogleMaps.textContent = 'Abrir Google Maps'
+                    linkGoogleMaps.target = '_blank';
+
+                    divLocalizacao.appendChild(linkGoogleMaps)
+
+                    var frameGoogleMaps = document.createElement('iframe');
+                    frameGoogleMaps.src = 'https://www.bing.com/maps/embed?h=600&w=600&lvl=18&cp='
+                    + latitude
+                    + '~'
+                    + longitude
+                },
+                function(error){
+                    console.error(error);
+                    divLocalizacao.textContent = 'Não foi possivel detectar sua localização!';
+                },
+                {
+                    enableHighAccuracy: true,
+                }
+            );
+        }
+        else {
+            divLocalizacao.textContent = 'Seu navegador não possui suporte a localização.'
+        }
+    }
+    </script>
+
+</head>
+<body>
+    <h1>
+        Clique no botão para obter sua localização
+    </h1>
+    <br>
+    <button onclick="obterlocalizacao()">
+        Obter localização
+    </button>
+    <div id="localizacao"></div>
+</body>
+</html>

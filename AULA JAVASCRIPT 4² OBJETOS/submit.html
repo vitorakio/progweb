@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submissão de formulário via JavaScript</title>
+    <script>
+        function validarSubmit(){
+            var mensagem = document.contato.mensagem.value;
+            if (!mensagem){
+                alert('Informe a mensagem.')
+                return;
+            }
+            document.contato.submit();
+        }
+    </script>
+</head>
+<body>
+    <form name="contato" action="mailto:daorameunick1@hotmail.com">
+        <input type="text" name="mensagem" placeholder="Digite sua mensagem..."/>
+        <br>
+        <button type="button" onclick="validarSubmit()">Enviar</button>
+    </form>
+</body>
+</html>
