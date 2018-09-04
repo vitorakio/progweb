@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data e visita com cookies</title>
+    <script>
+        function salvarDataVisita(){
+            var dataAtual = new Date();
+            var dataCodificada = escape(dataAtual.toLocaleDateString());
+            document.cookie = 'ultima_visita=' + dataCodificada
+        }
+        function lerDataVisita(){
+            if(document.cookie){
+                var partes = document.cookie.split('=');
+                var dataVisita = partes[1];
+                var dataDecodificada = unescape(dataVisita);
+                alert('Sua ultima visita foi em ' + dataDecodificada)
+            }
+        }
+    </script>
+</head>
+<body>
+    <H1>Ler data de visita</H1>
+    <script>
+    lerDataVisita()
+    salvarDataVisita()
+    </script>
+</body>
+</html>

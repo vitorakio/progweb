@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookies JScript</title>
+    <script>
+        function ler(){
+            var partes = document.cookie.split('='); // ['nome', 'Vitor%20Akio']
+            var valor = partes[1]; // 'Vitor%20Akio'
+            var valorDecodificado = unescape(valor); // 'Vitor Akio'
+            alert('Seu nome é: ' + valorDecodificado)
+        }
+        function gravar(){
+            var nome = prompt('Informe o seu nome:');
+            var nomeCodificado = escape(nome);
+            document.cookie = 'nome=' + nomeCodificado;
+            alert('Obrigado!');
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ler()">
+        Ler
+    </button>
+    <br>
+    <button onclick="gravar()">
+        Gravar
+    </button>
+</body>
+</html>
