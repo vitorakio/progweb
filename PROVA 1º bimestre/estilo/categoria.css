@@ -1,0 +1,17 @@
+#categoria td, #categoria th{
+        border: 1px solid #ddd;
+        padding: 8px;
+        width: 240px;
+        font-family: BebasNeue, Helvetica,Arial, sans-serif;
+        float: left;
+}
+
+#categoria th {
+    width: 240px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(79, 120, 209);
+    color: white;
+    font-family: BebasNeue, Helvetica,Arial, sans-serif;
+}

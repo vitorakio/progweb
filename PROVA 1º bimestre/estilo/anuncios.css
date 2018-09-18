@@ -1,0 +1,20 @@
+#anuncios{
+    margin: none;
+    padding: none;
+    width: auto;
+    padding-top: 5px;
+    height: auto;
+    text-align: center;
+    font-family: BebasNeue, Helvetica,Arial, sans-serif;
+    float: center
+}
+
+#anuncio .titulo{
+    display: flex;
+    justify-content: start
+}
+
+#anuncios .carro{
+    width: 180px;
+    height: 120px;
+}

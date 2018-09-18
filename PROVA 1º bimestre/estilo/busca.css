@@ -1,0 +1,30 @@
+#busca{
+    color: rgb(79, 120, 209);
+    font-size: 16px;
+    margin: none;
+    font-size: 8px;
+    border-radius: 2px;
+    padding: 18px;
+    width: 240px;
+    padding-top: 5px;
+    height: 6px;
+    text-align: center;
+    font-family: BebasNeue, Helvetica,Arial, sans-serif;
+    float: left
+}
+
+#busca .botao{
+    background-color: white;
+    border: none;
+    color: rgb(79, 120, 209);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: BebasNeue, Helvetica,Arial, sans-serif;
+}
+
+#busca .botao:hover {
+    background-color: gray;
+}
