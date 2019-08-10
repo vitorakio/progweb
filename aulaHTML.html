@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TABELAS</title>
+    <style>
+        table, th, td{
+            border: 1px solid rgb(110, 119, 146);
+        }
+        table{
+            border-collapse: collapse
+        }
+        td:hover {
+            color:rgb(123, 241, 139);
+            animation: fadein 2s;
+            -webkit-animation: fadein 2s;
+        }
+        @-webkit-keyframes fadein { 
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+        }
+    </style>
+</head>
+
+<body> 
+    <table>
+    <tbody>
+        <caption style="color: blue">Tabela de carros</caption>
+        <thead><tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+        </tr></thead>
+        <tr>
+            <td>Toyota</td>
+            <td>Corolla</td>
+            <td>2006</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Fiat</td>
+            <td>Palio</td>
+            <td>2015</td>
+        </tr>
+        <tr>
+            <td>Bravo</td>
+            <td>2016</td>
+        </tr>
+        <tr>
+            <td colspan="3">Última data de atualização</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
