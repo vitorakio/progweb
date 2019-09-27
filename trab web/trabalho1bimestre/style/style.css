@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#cabecalho{
+    background-color: #3b89ff;
+    padding: 15px;
+    margin: auto
+	text-align: left;
+}
+
+#conteudo{
+    padding: 50px;
+    margin: 10px
+}
+
+#titulo{
+    text-align: center;
+    font-size: 36px;
+}
+
+#subtitulo{
+    padding: 10px;
+    margin: 30px;
+    border: 80px;
+    text-align: left;
+}
+
+#imagem{
+    float: right
+    ;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela</title>asdasd
+    <style>
+        table, th, td{
+            border: 1px solid rgb(110, 119, 146);
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+        }
+        td:hover {
+            color:rgb(255, 70, 70);
+            animation: fadein 2s;
+            -webkit-animation: fadein 2s;
+        }
+        @-webkit-keyframes fadein { 
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="text-align: left; font-size: 24px"><b>Horarios 4º TADS <br><br><br></b></caption>
+
+        <thead>
+            <tr>
+                <th style="width: 150px">Horário</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+            <tr>
+                <td>
+                    <b>19:30 - 20:20</b><br>
+                </td>
+                <td colspan="2" rowspan="2">
+                    <b>Banco de Dados 2</b><br><br>
+                    Lucas Mello Leão <br><br>
+                    39161 - Sistema-4A <br><br>
+                </td>
+                <td>
+                    <b>Projeto Interdisciplinar</b><br><br>
+                    Rosely Scheffer <br><br>
+                    39164 - Sistema-4A <br><br>
+                </td>
+                <td rowspan="2">
+                    <b>Processos de Software</b><br><br>
+                    Jaqueline Rissa Franco <br><br>
+                    39162 - Sistema-4A <br><br>
+                </td>
+                <td rowspan="2">
+                    <b>Programação Web 1</b><br><br>
+                    Jaime Filho <br><br>
+                    39163 - Sistema-4A <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>20:20 - 21:10</b><br>
+                </td>
+                <td>
+                    <b>Processos de Software</b><br><br>
+                    Jaqueline Rissa Franco <br><br>
+                    39162 - Sistema-4A <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>21:10 - 21:20</b><br>
+                </td>
+                <td colspan="6">
+                    <b>Intervalo</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>21:20 - 22:10</b>
+                </td>
+                <td rowspan="2" rowspan="2">
+                    <b>Processos de Software</b><br><br>
+                    Jaqueline Rissa Franco <br><br>
+                    39162 - Sistema-4A <br><br>                    
+                </td>
+                <td rowspan="2" rowspan="2">
+                    <b>Gerência de Projeto de Sistemas</b><br><br>
+                    Eugenio Martins <br><br>
+                    39159 - Sistema-4A <br><br>                    
+                </td>
+                <td rowspan="2" rowspan="2">
+                    <b>Processos de Software</b><br><br>
+                    Jaqueline Rissa Franco <br><br>
+                    39162 - Sistema-4A <br><br>                    
+                </td>
+                <td rowspan="2" rowspan="2">
+                    <b>Gerência de Projeto de Sistemas</b><br><br>
+                    Eugenio Martins <br><br>
+                    39159 - Sistema-4A <br><br>                    
+                </td>
+                <td rowspan="2" colspan="2">
+                    <b>Programação Web 1</b><br><br>
+                    Jaime Filho <br><br>
+                    39163 - Sistema-4A <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>22:10 - 23:00</b>
+                </td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
