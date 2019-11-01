@@ -1,0 +1,46 @@
+.form-group{
+    padding: 60px;
+    margin: auto;
+
+}
+
+
+.senhaBarra {
+    display: block;
+    height: 12px;
+    position: relative
+  }
+  
+  .senhaBarra::after {
+    content: attr(texto);
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 200ms ease-in-out;
+    text-align: center
+  }
+  
+  .senhaBarra[texto='Força da senha']::after {
+    background-color: #333;
+    width: 100%
+  }
+  
+  .senhaBarra[texto='fraca']::after {
+    background-color: #e74c3c;
+    width: 33%
+  }
+  
+  .senhaBarra[texto='normal']::after {
+    background-color: #f1c40f;
+    width: 66%
+  }
+  
+  .senhaBarra[texto='forte']::after {
+    background-color: #2ecc71;
+    width: 100%
+  }
+  
+  input, span { margin: 4px }

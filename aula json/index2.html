@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="container">
+                <h1>Praticando 2 - JSON</h1>
+                <br>
+                <p><a href="#" id="botao">CLICA AE! </a></p>
+                <div id="app"></div>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(function (){
+            $("#botao").on("click", function(){
+                var myObj = [
+                    {"ID" : 1, "Marca" : "Chevrolet", "Modelo": "Cruze", "Ano": 2012,"Valor": "R$ 32.500,00"},
+                    {"ID" : 2, "Marca" : "Chevrolet", "Modelo": "Onix", "Ano": 2015,"Valor": "R$ 34.000,00"},
+                    {"ID" : 3, "Marca" : "Volksvagem", "Modelo": "Fusca", "Ano": 1976,"Valor": "R$ 4.200,00"},
+                    {"ID" : 4, "Marca" : "Honda", "Modelo": "Fit", "Ano": 2011,"Valor": "R$ 24.600,00"},
+                    {"ID" : 5, "Marca" : "Ford", "Modelo": "Fiesta", "Ano": 2009,"Valor": "R$ 19.300,00"},
+                ]
+                
+                var html;
+                html = "<table class='table'>"
+                html+="<thead>"
+
+                html+="<th>ID</th>"
+                html+="<th>Marca</th>"
+                html+="<th>Modelo</th>"
+                html+="<th>Ano</th>"
+                html+="<th>Valor</th>"
+
+                html+="</thead><tbody>"
+                    for (x in myObj){
+                        html+= "<tr>"+
+                            "<td>" + myObj[x].ID + "</td>"+
+                            "<td>" + myObj[x].Marca + "</td>"+
+                            "<td>" + myObj[x].Modelo + "</td>"+
+                            "<td>" + myObj[x].Ano + "</td>"+
+                            "<td>" + myObj[x].Valor + "</td>"+
+                        "</tr>"
+                    }
+                html+="</tbody></table>"
+                $("#app").append(html);
+            })
+        })
+    </script>
+  </body>
+</html>
