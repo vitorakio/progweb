@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Senha</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div style="margin:0 auto; width:70%; text-align:center;">
+        <h3> Medidor de Senha</h3>
+            Insira sua Senha: 
+        <input type="password" id="pass"><br/>
+        <meter value="0" id="pg" max="100"></meter> 
+        <span id="cpx">0%</span>
+    </div>   
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.complexify.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        $("#pass").complexify({}, function(valid, complexity){
+            //console.log("Password complexity: " + Math.round(complexity));
+            $("#pg").val(Math.round(complexity));
+            $("#cpx").html(Math.round(complexity)+'%');
+          });
+        });
+    </script>
+
+</html>

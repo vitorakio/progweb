@@ -1,0 +1,18 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.complexify.min.js"></script>
+<div style="margin:0 auto; width:70%; text-align:center;">
+<h3> Password strength checker</h3>
+Enter Storng Password: 
+<input type="password" id="pass"><br/>
+<progress value="0" max="100" id="pg"></progress> <span id="cpx">0%</span> 
+</div>
+<script type="text/javascript">
+$(function(){
+$("#pass").complexify({}, function(valid, complexity){
+    //console.log("Password complexity: " + Math.round(complexity));
+    $("#pg").val(Math.round(complexity));
+    $("#cpx").html(Math.round(complexity)+'%');
+  });
+});
+  
+</script>
