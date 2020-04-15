@@ -1,0 +1,36 @@
+body{
+    background-image: url("img/fundo.png");
+    font-family: Cambria
+}
+#principal{
+    width: 900px;
+    background-color: bisque;
+}
+#menu{
+    color: crimson;
+    padding: 18px;
+}
+#conteudo{
+    background-color: rgb(163, 140, 112);
+    padding: 10px;
+}
+#rodape{
+    text-align: center;
+}
+
+a{
+    color: cadetblue;
+    text-decoration: blueviolet;
+    font-weight: bold;
+    padding: 5px
+}
+
+h1{
+    color: darkolivegreen;
+    font-size: 1.2em;
+}
+
+.img-campanha{
+    border: 10px solid rgb(255, 112, 68);
+    border-style: groove
+}
